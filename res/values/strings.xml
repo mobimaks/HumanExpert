@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Human Expert</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="back_to_scenarios">Back to scenarios</string>
+</resources>

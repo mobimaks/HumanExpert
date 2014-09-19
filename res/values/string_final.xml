@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="scenariosUrl">http://expert-system.internal.shinyshark.com/scenarios/</string>
+    <string name="caseUrl">http://expert-system.internal.shinyshark.com/cases/%d</string>
+</resources>

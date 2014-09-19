@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:clickable="false"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <ImageView android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:background="@android:color/white"
+                   android:layout_weight="1"
+                   android:scaleType="fitCenter"
+                   android:id="@+id/ivCaseImage"
+                   android:src="@drawable/no_image"
+                   android:layout_marginBottom="@dimen/case_image_margin_bottom"/>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:gravity="center"
+                      android:id="@+id/tvCaseText"
+                      android:textStyle="italic"
+                      android:textSize="@dimen/case_text_size"/>
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnPanel"
+                    android:layout_marginTop="@dimen/btn_panel_margin_top"
+                    android:layout_below="@id/tvCaseText">
+
+                <Button android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        style="@style/ButtonText"
+                        android:background="@drawable/btn"
+                        android:enabled="false"
+                        android:text="@string/yes"
+                        android:id="@+id/btn1"/>
+
+                <Button android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/ButtonText"
+                        android:background="@drawable/btn"
+                        android:layout_alignParentRight="true"
+                        android:enabled="false"
+                        android:text="@string/no"
+                        android:id="@+id/btn2"/>
+            </RelativeLayout>
+
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/ButtonText"
+                    android:background="@drawable/btn"
+                    android:id="@+id/btnBack"
+                    android:layout_below="@id/btnPanel"
+                    android:layout_centerHorizontal="true"
+                    android:visibility="gone"
+                    android:text="@string/back_to_scenarios"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ProgressBar
+            android:layout_width="@dimen/progress_bar_size"
+            android:layout_height="@dimen/progress_bar_size"
+            android:layout_centerInParent="true"
+            android:visibility="invisible"
+            android:id="@+id/empty_case"/>
+
+</RelativeLayout>
